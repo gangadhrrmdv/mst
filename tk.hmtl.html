@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Booking Detail</title>
+    </head>
+    <body>
+        <script>
+            class person{
+                constructor(name,age){
+                    this.name=name;
+                    this.age=age;
+                }
+            }
+            class Employee extends person{
+                constructor(name,age,role,salary){
+                    super(name,age);
+                    this.role=role;
+                    this.salary=salary;
+                }
+                Details(){
+                    document.write("<br>Employee Details:</br><br>");
+                    document.write("Name: "+this.name+"<br>"); 
+                    document.write("Age: "+this.age+"<br>"); 
+                    document.write("Role: "+this.role+"<br>"); 
+                    document.write("Salaty: "+this.salary+"<br>");
+                }
+            }
+            let c=new Employee("chakri","software developer","1000000");
+            c.Details();
+            
+        </script>
+    </body>
+</html>
